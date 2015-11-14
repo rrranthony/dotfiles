@@ -15,3 +15,5 @@
 	ci = commit
 	co = checkout
 	cv = commit -v
+[push]
+	default = simple
