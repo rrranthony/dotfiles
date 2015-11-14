@@ -1,0 +1,17 @@
+[core]
+	editor = vim
+	pager = less
+	excludesfile = ~/.gitignore
+[color]
+	ui = true
+[user]
+	name = Anthony Young
+	email = rrranthony@users.noreply.github.com
+[github]
+	user = rrranthony
+[alias]
+	s = status
+	d = diff
+	ci = commit
+	co = checkout
+	cv = commit -v
