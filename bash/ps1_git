@@ -1,0 +1,19 @@
+git_current_branch() {
+    # Return the current git branch as " (<branch_name>)", e.g., " (master)".
+    # We redirect stderr to /dev/null in case the current working directory is not a git repo.
+    git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# Set PS1 to show current git branch
+# The default PS1 is the commented out line below
+#export PS1="\h:\W \u\$ "
+# Colors:
+#     34m - light blue
+#     33m - yellow
+#     00m - reset
+# PS1 variables:
+#     \u - username
+#     \h - first part of hostname
+#     \W - basename of current working directory
+# "<user>@<host> <current_working_dir_basename> <git_current_branch>$ "
+export PS1="\u@\h \[\033[34m\]\W\[\033[33m\]\$(git_current_branch)\[\033[00m\]\$ "

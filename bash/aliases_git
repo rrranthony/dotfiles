@@ -1,0 +1,7 @@
+# Git aliases
+alias gs='git status'
+alias gb='git branch -a'
+alias gd='git diff'
+alias ga='git add .'
+alias gc='git commit --verbose'
+alias gg='git log --graph --topo-order --decorate --oneline --all'  # succinct graph

@@ -1,0 +1,12 @@
+# Git bash completion.  See http://apple.stackexchange.com/a/55886.
+GIT_BASH_COMPLETION_URL="https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash"
+GIT_BASH_COMPLETION_DEST=${HOME}/.git-completion.bash
+if [ ! -f ${GIT_BASH_COMPLETION_DEST} ]; then
+    echo "Downloading git bash completion from ${GIT_BASH_COMPLETION_URL} to ${GIT_BASH_COMPLETION_DEST}"
+    curl --silent --connect-timeout 5 --max-time 20 ${GIT_BASH_COMPLETION_URL} -o ${GIT_BASH_COMPLETION_DEST}
+fi
+if [ -f ${GIT_BASH_COMPLETION_DEST} ]; then
+    source ${GIT_BASH_COMPLETION_DEST}
+else
+    echo "Downlaod of git bash completion from ${GIT_BASH_COMPLETION_URL} to ${GIT_BASH_COMPLETION_DEST} failed"
+fi
