@@ -2,8 +2,26 @@
 	editor = vim
 	pager = less
 	excludesfile = ~/.gitignore
+
+# https://gist.github.com/trey/2722934
 [color]
-	ui = true
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
 [user]
 	name = Anthony Young
 	email = rrranthony@users.noreply.github.com
