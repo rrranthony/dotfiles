@@ -16,4 +16,6 @@ git_current_branch() {
 #     \h - first part of hostname
 #     \W - basename of current working directory
 # "<user>@<host> <current_working_dir_basename> <git_current_branch>$ "
-export PS1="\u@\h \[\033[34m\]\W\[\033[33m\]\$(git_current_branch)\[\033[00m\]\$ "
+#export PS1="\u@\h \[\033[34m\]\W\[\033[33m\]\$(git_current_branch)\[\033[00m\]\$ "
+# Abbreviated user/host
+export PS1="ajy@mbp \[\033[34m\]\W\[\033[33m\]\$(git_current_branch)\[\033[00m\]\$ "
