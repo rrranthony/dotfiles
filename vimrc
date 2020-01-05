@@ -1,6 +1,6 @@
 " general config
+syntax on
 filetype plugin indent on " also enable language-dependent indenting
-syntax enable
 
 " filetypes
 autocmd FileType python set textwidth=120 tabstop=4 softtabstop=4 shiftwidth=4 expandtab
