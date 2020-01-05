@@ -1,0 +1,1 @@
+alias s="source ~/.bash_profile; echo '~/.bash_profile sourced'"
