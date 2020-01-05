@@ -1,6 +1,7 @@
 # Dotfiles
 Add to `~/.bash_profile`:
 
-    source /path/to/dotfiles/bash/aliases_git
-    source /path/to/dotfiles/bash/completion_git
-    source /path/to/dotfiles/bash/ps1_git
+    export DOTFILES_PATH="/path/to/dotfiles"
+    source ${DOTFILES_PATH}/bash/aliases_git
+    source ${DOTFILES_PATH}/bash/completion_git
+    source ${DOTFILES_PATH}/bash/ps1_git
