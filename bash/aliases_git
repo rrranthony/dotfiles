@@ -5,5 +5,7 @@ alias gds='git diff --staged'
 alias ga='git add .'
 alias gc='git commit --verbose'
 alias gca='git commit --ammend --verbose'
+alias gp='git push'
+alias gpf='git push --force'
 alias gl='git log'
 alias gg='git log --graph --topo-order --decorate --oneline --all'  # succinct graph
