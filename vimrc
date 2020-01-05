@@ -4,6 +4,7 @@ filetype plugin indent on " also enable language-dependent indenting
 
 " filetypes
 autocmd FileType python set textwidth=120 tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+autocmd FileType java set textwidth=120 tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 " search/substitute
 set ignorecase
